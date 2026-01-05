@@ -43,12 +43,18 @@
       font-size: 16px;
     }
 
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 22px;
-      color: #333;
-    }
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero-image {
+  margin-top: 20px;
+  max-width: 180px;
+}
+
 
     .features {
       display: flex;
@@ -93,8 +99,11 @@
   </nav>
 
   <section class="hero">
-    <h2>Instalacja 24/7 – Twoje bezpieczeństwo przez całą dobę.</h2>
-  </section>
+  <h2>Instalacja 24/7 
+    <br> Twoje bezpieczeństwo przez całą dobę<br></h2>
+
+  <img src="zdjęcie.png" alt="Przegląd instalacji 24/7" class="hero-image">
+</section>
 
   <section class="features">
     <div class="feature">
@@ -121,4 +130,3 @@
   </section>
 </body>
 </html>
-
