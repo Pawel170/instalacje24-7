@@ -5,90 +5,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Przegląd instalacji 24/7</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png.png">
 
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      background: linear-gradient(135deg, #f7f1e3, #ffffff);
+      color: #1c2a39;
     }
 
     header {
-      text-align: center;
-      padding: 20px;
-      font-size: 24px;
-      font-weight: bold;
+      text-align:center;
+      padding:30px 20px;
+      font-size:28px;
+      font-weight:bold;
+      background:#1c2a39;
+      color:white;
     }
 
     nav {
-      background-color: #f5ede6; /* beżowy kolor menu */
-      text-align: center;
-      padding: 10px 0;
+      background:#e5e5e5;
+      padding:12px 0;
     }
 
     nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      list-style:none;
+      display:flex;
+      justify-content:center;
+      gap:25px;
     }
 
     nav a {
-      text-decoration: none;
-      color: #5a4636; /* brązowy kolor tekstu */
-      font-size: 16px;
+      text-decoration:none;
+      color:#1c2a39;
+      font-size:15px;
+      padding:8px 18px;
+      border-radius:20px;
+      transition:0.3s;
     }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
-}
-.hero-image {
-  margin-top: 20px;
-  max-width: 180px;
-}
+    nav a:hover { background:#d6d6d6; }
 
+    .hero {
+      text-align:center;
+      padding:60px 20px 40px;
+    }
+
+    .hero h2 {
+      font-size:30px;
+      margin-bottom:25px;
+      line-height:1.4;
+    }
+
+    .hero-buttons {
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+      margin-bottom:30px;
+    }
+
+    .btn {
+      border:none;
+      padding:12px 24px;
+      border-radius:25px;
+      font-size:14px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .btn-primary {
+      background:#1c2a39;
+      color:white;
+    }
+
+    .btn-secondary {
+      background:white;
+      color:#1c2a39;
+      border:2px solid #1c2a39;
+    }
+
+    .btn:hover { transform:translateY(-2px); }
+
+    .hero-image {
+      max-width:250px;
+      border-radius:25px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    /* ✅ SEKCJA KAFELKÓW */
 
     .features {
       display: flex;
       justify-content: center;
-      gap: 40px;
-      padding: 40px 20px;
-      text-align: center;
+      gap: 25px;
+      padding: 50px 20px 80px;
+      flex-wrap: wrap;
     }
 
     .feature {
-      width: 250px;
+      width: 280px;
+      background: white;
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.12);
     }
 
     .icon {
-      font-size: 40px;
-      color: #a77b54; /* brązowy kolor ikonek */
-      margin-bottom: 10px;
+      font-size: 38px;
+      margin-bottom: 20px;
     }
 
     .feature h3 {
-      margin: 10px 0 5px;
-      font-size: 18px;
+      font-size: 17px;
+      margin-bottom: 10px;
+      color: #1c2a39;
     }
 
     .feature p {
       font-size: 14px;
       color: #555;
+      line-height: 1.5;
+      margin-bottom: 8px;
     }
+
   </style>
 </head>
 <body>
-  <header>
-    PRZEDLĄD INSTALACJI 24/7
-  </header>
+
+  <header> PRZEDLĄD INSTALACJI 24/7</header>
 
   <nav>
     <ul>
@@ -98,28 +154,30 @@
     </ul>
   </nav>
 
+  <!-- ✅ HERO -->
   <section class="hero">
-  <h2>Przegląd instalacji 24/7
-    <br> Twoje bezpieczeństwo przez całą dobę<br></h2>
+    <h2>Przegląd instalacji 24/7<br>Twoje bezpieczeństwo przez całą dobę</h2>
 
-  <img src="zdjęcie.png" alt="Przegląd instalacji 24/7" class="hero-image">
-</section>
+    
 
+    <img src="zdjęcie.png" class="hero-image">
+  </section>
+
+  <!-- ✅ FEATURES -->
   <section class="features">
+
     <div class="feature">
       <div class="icon">🔒</div>
-      <h3>bezpieczeństwo <br> i niezawodność o każdej porze</h3>
+      <h3>Bezpieczeństwo<br>i niezawodność</h3>
       <p>Nasza firma specjalizuje się w kompleksowych usługach instalacyjnych – elektrycznych. Dzięki całodobowej dostępności jesteśmy w stanie szybko reagować na każdą awarię i zapewnić profesjonalne wsparcie w nagłych sytuacjach.</p>
+      <p>Dzięki całodobowej dostępności szybko reagujemy na każdą awarię.</p>
     </div>
 
     <div class="feature">
-      <div class="icon">🏷️ </div>
+      <div class="icon">🏷️</div>
       <h3>Co oferujemy?</h3>
-      <p>przegląd instalacji elektrycznych</p> 
+      <p>przegląd instalacji elektrycznych  Szybki dojazd i pomoc 24 godziny na dobę, 7 dni w tygodniu Nowoczesne rozwiązania gwarantujące bezpieczeństwo i wygodę</p>
 
-      <p>Szybki dojazd i pomoc 24 godziny na dobę, 7 dni w tygodniu</p>
-
-      <p>Nowoczesne rozwiązania gwarantujące bezpieczeństwo i wygodę</p>
     </div>
 
     <div class="feature">
@@ -127,10 +185,11 @@
       <h3>Dlaczego my?</h3>
       <p>Stawiamy na profesjonalizm, niezawodność i indywidualne podejście do każdego klienta. Nasze wieloletnie doświadczenie oraz wyspecjalizowany zespół sprawiają, że możemy sprostać nawet najbardziej wymagającym zleceniom.</p>
     </div>
+
   </section>
+
 </body>
 </html>
-
 
 
 
