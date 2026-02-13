@@ -3,96 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Przegląd instalacji 24/7</title>
+  <title>Kontakt - Instalacja 24/7</title>
+
   <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fff;
+      background: linear-gradient(135deg, #f7f1e3, #ffffff);
+      color: #1c2a39;
     }
 
     header {
-      text-align: center;
-      padding-top: 20px;
+      text-align:center;
+      padding:30px 20px;
+      font-size:28px;
+      font-weight:bold;
+      background:#1c2a39;
+      color:white;
     }
 
-    header h1 {
-      font-size: 24px;
-      font-weight: 700;
-      color: #000;
-      margin: 0;
-    }
-
-    /* Pasek nawigacyjny – dokładnie jak na zdjęciu */
     nav {
-      background-color: #f5ece4;
-      text-align: center;
-      padding: 12px 0;
-      margin-top: 15px;
+      background:#e5e5e5;
+      padding:12px 0;
+    }
+
+    nav ul {
+      list-style:none;
+      display:flex;
+      justify-content:center;
+      gap:25px;
     }
 
     nav a {
-      color: #4a3b32;
-      text-decoration: none;
-      margin: 0 25px;
-      font-size: 16px;
-      font-weight: normal;
+      text-decoration:none;
+      color:#1c2a39;
+      padding:8px 18px;
+      border-radius:20px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover { background:#d6d6d6; }
+
+    .content {
+      max-width:700px;
+      margin:60px auto;
+      padding:0 20px;
     }
 
-    /* Sekcja kontaktu */
-    .contact-container {
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
+    .card {
+      background:white;
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 8px 22px rgba(0,0,0,0.08);
     }
 
-    .contact-container h2 {
-      font-size: 24px;
-      font-weight: 700;
-      color: #222;
-      margin-bottom: 25px;
-    }
+    h2 { margin-bottom:25px; text-align:center; }
 
-    .contact-item {
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-      margin-bottom: 12px;
-      color: #222;
-    }
-
-    .contact-item i {
-      color: #007bff;
-      margin-right: 10px;
-      font-style: normal;
-    }
+    .contact-item { margin-bottom:15px; font-size:15px; }
+    .label { font-weight:bold; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Przegląd instalacji 24/7</h1>
-  </header>
+  <header>PRZEDLĄD INSTALACJI 24/7</header>
 
   <nav>
-    <a href="index.html">Strona główna</a>
-    <a href="onas.html">O nas</a>
-    <a href="kontakt.html">Kontakt</a>
+    <ul>
+      <li><a href="index.html">Strona główna</a></li>
+      <li><a href="onas.html">O nas</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
   </nav>
 
-  <div class="contact-container">
-    <h2>KONTAKT</h2>
-    <div class="contact-item"><i>📧</i> przegladinstalacji24@gmail.com</div>
-    <div class="contact-item"><i>📞</i> +48 663 900 825</div>
-    <div class="contact-item"><i>📍</i>  Michała Drzymały 8B Świętochłowice  41-600</div>
-  </div>
+  <section class="content">
+    <div class="card">
+      <h2>Kontakt</h2>
+      <div class="contact-item"><span class="label">📧 Email:</span> przegladinstalacji24@gmail.com</div>
+      <div class="contact-item"><span class="label">📞 Telefon:</span> <a href="tel:+48663900825">+48 663 900 825</a></div>
+      <div class="contact-item"><span class="label">📍 Adres:</span> Michała Drzymały 8B Świętochłowice 41-600</div>
+    </div>
+  </section>
 
 </body>
 </html>
-
-
